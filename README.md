@@ -74,16 +74,37 @@ python inventory_management.py
 ```
 
 ## Code snippets
+### Add new item
 ![Add new item interface](doc/func/add.jpg)
+
+### User login 
 ![User login screen](doc/func/aut-user.jpg)
+
+### Expiration date
 ![Expiration date update screen](doc/func/date.jpg)
+
+### Delete item
 ![Item deletion confirmation interface](doc/func/delete.jpg)
+
+### Inventory display screen
 ![Inventory display screen](doc/func/display.jpg)
+
+### Inventory summary view
 ![nventory summary view](doc/func/inventory.jpg)
-![Main menu of inventory system](doc/func/main.jpg)
+
+### Main
+![Main inventory system](doc/func/main.jpg)
+
+### Search by category
 ![Category search interface](doc/func/search-category.jpg)
+
+### Search by item
 ![Item search screen](doc/func/search-item.jpg)
+
+### Low stock alert
 ![Low stock alert interface](doc/func/stock.jpg)
+
+### Update item
 ![Update item details screen](doc/func/update.jpg)
 
 ## User stories
