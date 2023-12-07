@@ -57,6 +57,27 @@ python inventory_management.py
 
 You will be prompted to authenticate before accessing the inventory management functionalities.
 
+## User stories
+- As a store manager, I want to view the entire inventory so that I can have a clear understanding of all items available in the store.
+
+- As a store clerk, I want to add new items to the inventory system quickly, ensuring that all recent purchases are tracked and accounted for.
+
+- As an inventory manager, I want to update item details in the inventory to ensure all information is current and accurate, including prices, categories, and quantities.
+
+- As a store owner, I want to delete items from the inventory system that are no longer available or have been discontinued.
+
+- As a store supervisor, I want to search for items by name to find specific products quickly and check their details like price, quantity, and expiration date.
+
+- As a stock manager, I want to search inventory by category so that I can get a better overview of items grouped under a specific category.
+
+- As a store manager, I need to view a summary of the inventory to get insights into the total number of items, total quantity, and category-wise distribution.
+
+- As a store assistant, I want to receive alerts for items with low stock, ensuring timely restocking and preventing stockouts.
+
+- As a quality control officer, I want to get warnings for items nearing their expiration date to manage inventory rotation and reduce waste.
+
+- As a new employee, I want to access the system using my credentials to ensure security and track my inventory management activities.
+
 ## Authentication
 
 For trial purposes, you can log in using the username `user1` and the password `password1`. The script uses a simple authentication system with predefined usernames and passwords. Update the `authenticate_user` function to modify or extend the authentication logic.
