@@ -37,6 +37,24 @@ In several functions, users have the flexibility to exit the process at any time
 - **Search by Category**: Find items based on their category. Type 'cancel' to exit the search.
 ![Category search interface in inventory system](doc/features/06-search-category.jpg)
 
+## Authentication
+
+For trial purposes, you can log in using the username `user1` and the password `password1`. The script uses a simple authentication system with predefined usernames and passwords. Update the `authenticate_user` function to modify or extend the authentication logic.
+
+![Login screen with username and password fields](doc/aut/username-password.jpg)
+![Screen displaying successful login message](doc/aut/aut-successful.jpg)
+![Screen showing login failure message](doc/aut/aut-failed.jpg)
+
+You will be prompted to authenticate before accessing the inventory management functionalities.
+
+## Data Storage
+
+The inventory data is stored in an Excel file (`inventory.xlsx`). Ensure this file exists in the same directory as the script, or modify the `file_name` variable in the script to point to the correct file location.
+
+## Customization
+
+You can customize the script by modifying the source code to better fit your specific inventory management needs.
+
 ## Installation
 
 1. Clone the repository:
@@ -55,7 +73,18 @@ Run the script using Python:
 python inventory_management.py
 ```
 
-You will be prompted to authenticate before accessing the inventory management functionalities.
+## Code snippets
+![Add new item interface](doc/func/add.jpg)
+![User login screen](doc/func/aut-user.jpg)
+![Expiration date update screen](doc/func/date.jpg)
+![Item deletion confirmation interface](doc/func/delete.jpg)
+![Inventory display screen](doc/func/display.jpg)
+![nventory summary view](doc/func/inventory.jpg)
+![Main menu of inventory system](doc/func/main.jpg)
+![Category search interface](doc/func/search-category.jpg)
+![Item search screen](doc/func/search-item.jpg)
+![Low stock alert interface](doc/func/stock.jpg)
+![Update item details screen](doc/func/update.jpg)
 
 ## User stories
 - As a store manager, I want to view the entire inventory so that I can have a clear understanding of all items available in the store.
@@ -78,24 +107,37 @@ You will be prompted to authenticate before accessing the inventory management f
 
 - As a new employee, I want to access the system using my credentials to ensure security and track my inventory management activities.
 
-## Authentication
 
-For trial purposes, you can log in using the username `user1` and the password `password1`. The script uses a simple authentication system with predefined usernames and passwords. Update the `authenticate_user` function to modify or extend the authentication logic.
+## User Interaction Framework for the Supermarket Inventory Management System
 
-![Login screen with username and password fields](doc/aut/username-password.jpg)
-![Screen displaying successful login message](doc/aut/aut-successful.jpg)
-![Screen showing login failure message](doc/aut/aut-failed.jpg)
+Creating a task flow and a user flow for the Supermarket Inventory Management System will help visualize how users interact with the system and complete specific tasks. Here's a breakdown of both:
+
+### Task Flow
+
+1. **Start**: User logs into the system.
+2. **Choose 'Add Item' Option**: User selects the option to add a new item from the main menu.
+3. **Enter Item Details**: User is prompted to enter details such as item name, category, price, expiration date, and quantity.
+   - If the user types 'cancel' at any point, the process ends and returns to the main menu.
+4. **Confirm Addition**: The system validates the entered details and adds the item to the inventory.
+5. **Success Message**: The system displays a confirmation message that the item has been added.
+6. **Return to Main Menu** or **Add Another Item**: The user decides to return to the main menu or continue adding more items.
+
+### User Flow
+
+1. **Authenticate**: The manager starts by logging into the system using their credentials.
+2. **Main Menu Overview**: Upon successful login, the manager views the main menu with options like 'Display Inventory', 'Add Item', 'Update Item', etc.
+3. **Task Selection**: 
+   - The manager selects a task to perform, such as 'Display Inventory' to review current stock levels.
+   - They might choose 'Low Stock Alert' to view items that need restocking.
+   - They could select 'Inventory Summary' for a quick overview of total items and quantities.
+4. **Performing Tasks**: Depending on the selection, the manager engages with the respective feature (e.g., reviewing inventory, checking low stock items).
+5. **Decision Making**: Based on the information gathered (like low stock), the manager makes decisions (e.g., ordering more stock).
+6. **Further Actions**: The manager may then proceed to perform other tasks like updating item details, adding new items, or deleting old ones.
+7. **Logging Out**: After completing the tasks, the manager logs out of the system.
 
 ## Validation
 ![Screenshot of validation](doc/check/validation.jpg)
 
-## Data Storage
-
-The inventory data is stored in an Excel file (`inventory.xlsx`). Ensure this file exists in the same directory as the script, or modify the `file_name` variable in the script to point to the correct file location.
-
-## Customization
-
-You can customize the script by modifying the source code to better fit your specific inventory management needs.
 
 ## Contributions
 
