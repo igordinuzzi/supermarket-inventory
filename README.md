@@ -65,6 +65,9 @@ For trial purposes, you can log in using the username `user1` and the password `
 ![Alt text](doc/aut/aut-successful.jpg)
 ![Alt text](doc/aut/aut-failed.jpg)
 
+## Validation
+![Alt text](doc/check/validation.jpg)
+
 ## Data Storage
 
 The inventory data is stored in an Excel file (`inventory.xlsx`). Ensure this file exists in the same directory as the script, or modify the `file_name` variable in the script to point to the correct file location.
